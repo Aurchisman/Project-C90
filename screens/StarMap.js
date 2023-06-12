@@ -12,7 +12,7 @@ export default class StarMapScreen extends Component {
     }
     render() {
         const { longitude, latitude } = this.state;
-        const { longitude, latitude } = this.state;
+        
         const path = `https://virtualsky.lco.global/embed/index.html?longitude=${longitude}&latitude=${latitude}&constellations=true&constellationlabels=true&showstarlabels=true&gridlines_az=true&live=true&projection=stereo&showdate=false&showposition=false`
             <View
                 style={{
