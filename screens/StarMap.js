@@ -3,6 +3,13 @@ import { Text, View } from 'react-native';
 import { WebView } from 'react-native-webview';
 
 export default class StarMapScreen extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+        latitude:'',
+         longitude:''
+        }
+    }
     render() {
         const { longitude, latitude } = this.state;
         const { longitude, latitude } = this.state;
@@ -22,7 +29,7 @@ export default class StarMapScreen extends Component {
                 <TextInput
                 style = {{height: 40, borderColor: 'gray', borderWidth: 1}}
                 placeholder="Enter your latitude"
-                placeholderTextColor="#ffff#000000"
+                placeholderTextColor="white"
                 onChangeText = {(text)=>{
                     this.setState({
                         latitude:text
@@ -32,7 +39,7 @@ export default class StarMapScreen extends Component {
                 <TextInput
                 style = {{height: 40, borderColor: 'gray', borderWidth: 1}}
                 placeholder="Enter your longitude"
-                placeholderTextColor="#ffff#000000"
+                placeholderTextColor="white"
                 onChangeText = {(text)=>{
                     this.setState({
                         longitude:text
